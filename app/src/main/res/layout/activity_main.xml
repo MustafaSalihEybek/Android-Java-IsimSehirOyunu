@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnNormalOyun"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:onClick="btnAnasayfaAyar"
+        android:text="Normal Oyun"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOyunIsmi" />
+
+    <Button
+        android:id="@+id/btnSureliOyun"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="btnAnasayfaAyar"
+        android:text="Süreli Oyun"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnNormalOyun"
+        app:layout_constraintStart_toStartOf="@+id/btnNormalOyun"
+        app:layout_constraintTop_toBottomOf="@+id/btnNormalOyun" />
+
+    <Button
+        android:id="@+id/btnCikis"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="btnAnasayfaAyar"
+        android:text="Çıkış"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnSureliOyun"
+        app:layout_constraintStart_toStartOf="@+id/btnSureliOyun"
+        app:layout_constraintTop_toBottomOf="@+id/btnSureliOyun" />
+
+    <TextView
+        android:id="@+id/textViewOyunIsmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="İsim Şehir Oyunu"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
